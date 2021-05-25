@@ -209,11 +209,14 @@ text-align: justify;
 @media only screen and (max-width: 600px) {
   .topnav {
     align-content: center;
-    align-items: flex-end;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
+    min-width: 300px;
   }
   .quote-container {
     grid-template-areas: "balance" "light" "singme" "focuscopy" "seedquote" "powerful";
-
+  }
+  .Stories-container p {
+    width: 375px;
   }
 }
