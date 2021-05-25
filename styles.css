@@ -44,8 +44,8 @@ footer {
     text-decoration: none;
     color: #dbc1a8;
     padding: 30px;
-    text-align: left;
-    margin-left: 340px;
+    text-align: center;
+    
 
 }
  button {
@@ -119,10 +119,10 @@ font-size: 20px;
     display: grid;
     grid-template-columns: auto 300px 300px 300px auto;
     grid-template-areas: ". balance light singme ." ". focuscopy seedquote powerful .";
-    grid-gap: 10px;
+    grid-gap: 20px;
     margin: 10px;
-    margin-left: 15px;
-    padding: 10px;
+    margin-left: 5px;
+    padding: 20px;
   }
 .balance {
   grid-area: balance;
@@ -142,6 +142,7 @@ font-size: 20px;
 .powerful {
   grid-area: powerful;
 }
+
   .quote-container > img {
     cursor: pointer;
     height: 300px;
@@ -162,18 +163,57 @@ font-size: 20px;
  /* Images page */ 
  .Photos-container {
   display: grid;
-  grid-template-columns: 300px 142px 300px ;
+  /* grid-template-columns:  auto 300px auto 142px auto 300px auto; */
+  grid-template-areas: ". dreamhome blair lightliving ." ". adoption kya boys ." ". thailand feels ant ." ". florida pinkbow hall .";
   grid-gap: 10px;
   margin: 10px;
   padding: 10px;
-  margin-left: 90px;
+  
 }
+.dreamhome {
+  grid-area: dreamhome;
+}
+.blair {
+  grid-area: blair;
+}
+.lightliving {
+  grid-area: lightliving;
+}
+.adoption {
+  grid-area: adoption;
+}
+.kya {
+  grid-area: kya;
+}
+.boys {
+  grid-area: boys;
+}
+.thailand {
+  grid-area: thailand;
+}
+.feels {
+  grid-area: feels;
+}
+.ant {
+  grid-area: ant;
+}
+.florida {
+  grid-area: florida;
+}
+.pinkbow {
+  grid-area: pinkbow;
+}
+.hall {
+  grid-area: hall;
+}
+
 
 .Photos-container > img {
   cursor: pointer;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
+  height: 300px;
+  /* background-size: cover;
+  background-attachment: fixed; */
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -211,12 +251,37 @@ text-align: justify;
     align-content: center;
     align-items: flex-start;
     flex-direction: row;
-    min-width: 300px;
+    max-width: 300px;
+ min-width: 400px;
+    margin-left: -63px;
   }
+  .homebody { 
+background-image: url(eucalyptus.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position-x: 0px;
+  background-position-y: 80px ;
+  height: 800px;}
+
   .quote-container {
     grid-template-areas: "balance" "light" "singme" "focuscopy" "seedquote" "powerful";
+    margin-left: 30px;
   }
+
+  .Photos-container {
+    grid-template-areas: "dreamhome" "blair" "lightliving" "adoption" "kya" "boys" "thailand" "feels" "ant" "florida" "pinkbow" "hall";
+    margin-left: 30px;
+  }
+
   .Stories-container p {
-    width: 375px;
+    width: 335px;
+    margin-left: 0px;
   }
-}
+ h4 {
+margin-left: 0px;
+ }
+
+ footer {
+   align: center;
+  }
+ }
